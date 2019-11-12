@@ -1,4 +1,4 @@
-package br.com.renannunessil.popmovies.movieslist.repository
+package br.com.renannunessil.popmovies.movies.movieslist.repository
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
