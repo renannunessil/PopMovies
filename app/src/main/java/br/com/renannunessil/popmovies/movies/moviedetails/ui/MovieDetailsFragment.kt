@@ -13,6 +13,7 @@ import br.com.renannunessil.popmovies.data.models.Movie
 import br.com.renannunessil.popmovies.databinding.FragmentMovieDetailsBinding
 import br.com.renannunessil.popmovies.extension.brDateFormat
 import br.com.renannunessil.popmovies.extension.getCalendarFromStringDate
+import br.com.renannunessil.popmovies.movies.activity.MoviesActivity
 import br.com.renannunessil.popmovies.movies.moviedetails.viewmodel.MovieDetailsViewModel
 import br.com.renannunessil.popmovies.movies.sharedviewmodel.SelectedMovieViewModel
 import com.squareup.picasso.Picasso
@@ -23,6 +24,7 @@ class MovieDetailsFragment : Fragment() {
     private lateinit var movieDetailsViewModel: MovieDetailsViewModel
     private lateinit var selectedMovieViewModel: SelectedMovieViewModel
     private lateinit var selectedMovie: Movie
+    private lateinit var parentActivity: MoviesActivity
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,7 +38,8 @@ class MovieDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        parentActivity = activity as MoviesActivity
+        parentActivity.showLoading(true)
         movieDetailsViewModel =
             ViewModelProviders.of(this, ViewModelFactory(requireContext()))[MovieDetailsViewModel::class.java]
 
@@ -54,6 +57,7 @@ class MovieDetailsFragment : Fragment() {
                 selectedMovie.movieCredits = it
                 selectedMovieViewModel.select(selectedMovie)
                 bindData()
+                parentActivity.showLoading(false)
             }
         })
 

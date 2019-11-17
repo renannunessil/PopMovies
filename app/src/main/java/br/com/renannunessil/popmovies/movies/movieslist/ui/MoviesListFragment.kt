@@ -14,14 +14,17 @@ import br.com.renannunessil.popmovies.R
 import br.com.renannunessil.popmovies.ViewModelFactory
 import br.com.renannunessil.popmovies.data.models.Movie
 import br.com.renannunessil.popmovies.databinding.FragmentMoviesListBinding
+import br.com.renannunessil.popmovies.movies.activity.MoviesActivity
 import br.com.renannunessil.popmovies.movies.movieslist.viewmodel.MoviesListViewModel
 import br.com.renannunessil.popmovies.movies.sharedviewmodel.SelectedMovieViewModel
+import kotlinx.android.synthetic.main.fragment_movies_list.*
 
 class MoviesListFragment : Fragment(), MoviesListAdapter.MoviesAdapterOnClickListener {
 
     private lateinit var binding: FragmentMoviesListBinding
     private lateinit var moviesListViewModel: MoviesListViewModel
     private lateinit var selectedMovieViewModel: SelectedMovieViewModel
+    private lateinit var parentActivity: MoviesActivity
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,18 +46,21 @@ class MoviesListFragment : Fragment(), MoviesListAdapter.MoviesAdapterOnClickLis
             activity?.run {
                 ViewModelProviders.of(this, ViewModelFactory(requireContext()))[SelectedMovieViewModel::class.java]
             } ?: throw Exception("Invalid Activity")
+        parentActivity = activity as MoviesActivity
 
         subscribeObservers()
         callMoviesApi()
     }
 
     private fun callMoviesApi() {
+        showLoading(true)
         moviesListViewModel.getPopMovies()
     }
 
     private fun subscribeObservers() {
         moviesListViewModel.getMoviesListResponseObservable().observe(this, Observer {
             if (it != null) {
+                showLoading(false)
                 configMoviesListAdapter(it)
             }
         })
@@ -73,5 +79,10 @@ class MoviesListFragment : Fragment(), MoviesListAdapter.MoviesAdapterOnClickLis
     override fun onClick(movie: Movie) {
         selectedMovieViewModel.select(movie)
         Navigation.findNavController(this.requireView()).navigate(R.id.act_moviesList_to_movieInfo)
+    }
+
+    fun showLoading(show: Boolean) {
+        parentActivity.showLoading(show)
+        rv_movies_list.isEnabled = !show
     }
 }
