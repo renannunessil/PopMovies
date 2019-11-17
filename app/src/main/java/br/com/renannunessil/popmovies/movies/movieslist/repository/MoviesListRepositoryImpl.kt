@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import br.com.renannunessil.popmovies.Constants
 import br.com.renannunessil.popmovies.data.Keys
 import br.com.renannunessil.popmovies.data.models.Movie
+import br.com.renannunessil.popmovies.data.models.PopMoviesResponse
 import br.com.renannunessil.popmovies.data.remote.MoviesApi
 import br.com.renannunessil.popmovies.data.remote.RetrofitClientInstance
 import retrofit2.Call
@@ -18,13 +19,14 @@ class MoviesListRepositoryImpl: MoviesListRepository {
 
     override fun getPopMovies() {
         service.getPopMovies(Keys.API_KEY, Constants.LANGUAGE).enqueue(object :
-            Callback<List<Movie>> {
-            override fun onFailure(call: Call<List<Movie>>, throwable: Throwable) {
+            Callback<PopMoviesResponse> {
+            override fun onFailure(call: Call<PopMoviesResponse>, throwable: Throwable) {
                 Log.d("ApiError", "Error: ${throwable.message}")
             }
 
-            override fun onResponse(call: Call<List<Movie>>, response: Response<List<Movie>>) {
-                moviesListResponseLiveData.value = response.body()
+            override fun onResponse(call: Call<PopMoviesResponse>, response: Response<PopMoviesResponse>) {
+                    val popMoviesResponse = response.body()
+                    moviesListResponseLiveData.value = popMoviesResponse?.moviesList
             }
         })
     }

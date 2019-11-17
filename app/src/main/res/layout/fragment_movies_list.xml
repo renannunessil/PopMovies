@@ -9,10 +9,10 @@
         tools:context=".movies.activity.MoviesActivity">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/moviesList"
+            android:id="@+id/rv_movies_list"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            tools:listitem="@layout/item_movies_list"
+            tools:listitem="@layout/item_pop_movies_list"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 

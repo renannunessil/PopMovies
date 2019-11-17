@@ -24,10 +24,12 @@
 
             <TextView
                 android:id="@+id/tv_movie_title"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/iv_movie_poster"
@@ -39,6 +41,8 @@
                 android:id="@+id/rb_movie_rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:numStars="5"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/iv_movie_poster"

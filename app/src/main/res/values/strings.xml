@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PopMovies</string>
+    
+    <string name="movie_rate_label">avaliação: </string>
+    <string name="release_date_label">lançamento: </string>
+    <string name="author_label">autor: </string>
+    <string name="director_label">diretor: </string>
+    <string name="not_found">Não encontrado</string>
 </resources>

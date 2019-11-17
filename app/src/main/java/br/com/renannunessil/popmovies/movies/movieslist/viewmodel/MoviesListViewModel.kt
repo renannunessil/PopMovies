@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import br.com.renannunessil.popmovies.data.models.Movie
 import br.com.renannunessil.popmovies.movies.movieslist.repository.MoviesListRepository
 
-class MoviesListViewModel(repository: MoviesListRepository): ViewModel() {
+class MoviesListViewModel(repository: MoviesListRepository) : ViewModel() {
 
     private val moviesListRepository = repository
     private lateinit var moviesListResponseLiveData: MutableLiveData<List<Movie>>
