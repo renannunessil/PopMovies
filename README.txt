@@ -4,5 +4,6 @@ O que eu descartei e implementaria caso tivesse mais tempo seria um ambiente de 
 a estrutura do ambiente de testes, e com o tempo que eu havia disponível, não consegui implementar o que eu queria, deixando a parte de testes um pouco a desejar, 
 porém, fiquei feliz que consegui mockar o retorno da api para utilizar no teste instrumentado do projeto, coisa que não havia feito nos meus projetos pessoais
 anteriormente. Também nunca trabalhei com o NavigationComponent antes, esse foi o primeiro projeto no qual o utilizei, e não consegui implementar uma forma de testar
-outras fragments do fluxo do nav_graph. Outra coisa que gostaria de implementar é algum framework de injeção de dependencias.
+outras fragments do fluxo do nav_graph. Outra coisa que gostaria de implementar é algum framework de injeção de dependencias, provavelmente Koin e tambem um framework
+para automação dos testes, provavelmente o Jacoco.
 No final das contas, fiquei feliz com o resultado, consegui implementar a maioria das coisas que eu gostaria. Espero que gostem!
