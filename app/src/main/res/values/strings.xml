@@ -6,4 +6,5 @@
     <string name="author_label">autor: </string>
     <string name="director_label">diretor: </string>
     <string name="not_found">Não encontrado</string>
+    <string name="verify_connection">Favor, verificar conexão</string>
 </resources>

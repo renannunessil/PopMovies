@@ -7,4 +7,5 @@ interface MoviesListRepository {
 
     fun getPopMovies()
     fun getMoviesListResponseObservable(): MutableLiveData<List<Movie>>
+    fun getMoviesListErrorObservable(): MutableLiveData<String>
 }

@@ -4,14 +4,22 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import br.com.renannunessil.popmovies.R
-import br.com.renannunessil.popmovies.movies.movieslist.ui.MoviesListFragment
 import kotlinx.android.synthetic.main.activity_movies.*
+import java.util.concurrent.atomic.AtomicBoolean
 
 class MoviesActivity : AppCompatActivity() {
+
+    val isTest = AtomicBoolean()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movies)
+
+        if (intent?.extras?.getBoolean("IsTest") == null) {
+            isTest.set(false)
+        } else {
+            isTest.set(intent.extras.getBoolean("IsTest"))
+        }
     }
 
     fun showLoading(show: Boolean) {

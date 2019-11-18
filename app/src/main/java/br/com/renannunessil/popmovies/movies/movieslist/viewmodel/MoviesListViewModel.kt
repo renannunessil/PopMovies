@@ -9,14 +9,13 @@ import br.com.renannunessil.popmovies.movies.movieslist.repository.MoviesListRep
 class MoviesListViewModel(repository: MoviesListRepository) : ViewModel() {
 
     private val moviesListRepository = repository
-    private lateinit var moviesListResponseLiveData: MutableLiveData<List<Movie>>
 
     fun getMoviesListResponseObservable(): LiveData<List<Movie>> {
-        if (!::moviesListResponseLiveData.isInitialized) {
-            moviesListResponseLiveData = moviesListRepository.getMoviesListResponseObservable()
-        }
+        return moviesListRepository.getMoviesListResponseObservable()
+    }
 
-        return moviesListResponseLiveData
+    fun getErrorObservable(): LiveData<String> {
+        return  moviesListRepository.getMoviesListErrorObservable()
     }
 
     fun getPopMovies() {

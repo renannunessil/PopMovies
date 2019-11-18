@@ -41,11 +41,11 @@ class MovieDetailsFragment : Fragment() {
         parentActivity = activity as MoviesActivity
         parentActivity.showLoading(true)
         movieDetailsViewModel =
-            ViewModelProviders.of(this, ViewModelFactory(requireContext()))[MovieDetailsViewModel::class.java]
+            ViewModelProviders.of(this, ViewModelFactory(requireContext(), parentActivity.isTest.get()))[MovieDetailsViewModel::class.java]
 
         selectedMovieViewModel =
             activity?.run {
-                ViewModelProviders.of(this, ViewModelFactory(requireContext()))[SelectedMovieViewModel::class.java]
+                ViewModelProviders.of(this, ViewModelFactory(requireContext(), false))[SelectedMovieViewModel::class.java]
             } ?: throw Exception("Invalid Activity")
 
         subscribeObservers()
