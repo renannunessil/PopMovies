@@ -9,6 +9,7 @@ import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import br.com.renannunessil.popmovies.Constants
 import br.com.renannunessil.popmovies.R
 import br.com.renannunessil.popmovies.movies.activity.MoviesActivity
 import br.com.renannunessil.popmovies.movies.movieslist.ui.MoviesListAdapter
@@ -27,7 +28,7 @@ class MoviesListFragmentTest {
     @Before
     fun setUp() {
         val intent = rule.activity.intent
-        intent.putExtra("IsTest", true)
+        intent.putExtra(Constants.TEST_PARAMETHER, true)
         rule.finishActivity()
         rule.launchActivity(intent)
     }

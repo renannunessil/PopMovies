@@ -10,5 +10,8 @@ class Constants {
         //Jobs
         const val AUTHOR = "Writer"
         const val DIRECTOR = "Director"
+
+        //Paramethers
+        const val TEST_PARAMETHER = "IsTest"
     }
 }

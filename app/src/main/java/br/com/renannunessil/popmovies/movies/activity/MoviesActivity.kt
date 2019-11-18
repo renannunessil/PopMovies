@@ -3,6 +3,7 @@ package br.com.renannunessil.popmovies.movies.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import br.com.renannunessil.popmovies.Constants
 import br.com.renannunessil.popmovies.R
 import kotlinx.android.synthetic.main.activity_movies.*
 import java.util.concurrent.atomic.AtomicBoolean
@@ -15,10 +16,10 @@ class MoviesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movies)
 
-        if (intent?.extras?.getBoolean("IsTest") == null) {
+        if (intent?.extras?.getBoolean(Constants.TEST_PARAMETHER) == null) {
             isTest.set(false)
         } else {
-            isTest.set(intent.extras.getBoolean("IsTest"))
+            isTest.set(intent.extras.getBoolean(Constants.TEST_PARAMETHER))
         }
     }
 
