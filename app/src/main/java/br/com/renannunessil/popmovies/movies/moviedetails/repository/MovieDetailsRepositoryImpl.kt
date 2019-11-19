@@ -21,7 +21,7 @@ class MovieDetailsRepositoryImpl(
 
     private val service: MoviesApi = RetrofitClientInstance.create()
     private lateinit var movieCreditsResponseLiveData: MutableLiveData<MovieCredits>
-    private lateinit var moviesListErrorLiveData: MutableLiveData<String>
+    private lateinit var movieCreditsErrorLiveData: MutableLiveData<String>
 
     override fun getMovieCredits(movieId: Int) {
         if (connectionUtil.isConnected()) {
@@ -39,7 +39,7 @@ class MovieDetailsRepositoryImpl(
                 }
             })
         } else {
-            moviesListErrorLiveData.value = context.getString(R.string.verify_connection)
+            movieCreditsErrorLiveData.value = context.getString(R.string.verify_connection)
         }
     }
 
@@ -51,12 +51,12 @@ class MovieDetailsRepositoryImpl(
         return movieCreditsResponseLiveData
     }
 
-    override fun getMoviesListErrorObservable(): MutableLiveData<String> {
-        if (!::moviesListErrorLiveData.isInitialized) {
-            moviesListErrorLiveData = MutableLiveData()
+    override fun getMovieCreditsErrorObservable(): MutableLiveData<String> {
+        if (!::movieCreditsErrorLiveData.isInitialized) {
+            movieCreditsErrorLiveData = MutableLiveData()
         }
 
-        return moviesListErrorLiveData
+        return movieCreditsErrorLiveData
     }
 
     object MovieDetailsRepositoryProvider {

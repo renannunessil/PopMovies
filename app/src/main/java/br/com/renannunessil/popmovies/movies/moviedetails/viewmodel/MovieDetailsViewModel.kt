@@ -19,6 +19,10 @@ class MovieDetailsViewModel(repository: MovieDetailsRepository): ViewModel() {
         return movieCreditsResponseLiveData
     }
 
+    fun getErrorObservable(): LiveData<String> {
+        return  movieDetailsRepository.getMovieCreditsErrorObservable()
+    }
+
     fun getMovieCredits(movieId: Int) {
         movieDetailsRepository.getMovieCredits(movieId)
     }

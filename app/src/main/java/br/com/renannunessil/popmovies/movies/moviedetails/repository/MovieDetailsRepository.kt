@@ -7,5 +7,5 @@ interface MovieDetailsRepository {
 
     fun getMovieCredits(movieId: Int)
     fun getMovieCreditsResponseObservable(): MutableLiveData<MovieCredits>
-    fun getMoviesListErrorObservable(): MutableLiveData<String>
+    fun getMovieCreditsErrorObservable(): MutableLiveData<String>
 }
