@@ -66,6 +66,7 @@ class MovieDetailsFragment : Fragment() {
             if (it != null) {
                 selectedMovie = it
                 movieDetailsViewModel.getMovieCredits(selectedMovie.id)
+                selectedMovieViewModel.getSelectedMovieObservable().removeObservers(this)
             }
         })
 
