@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import br.com.renannunessil.popmovies.movies.moviedetails.repository.MovieDetailsRepositoryImpl
+import br.com.renannunessil.popmovies.movies.moviedetails.repository.MovieDetailsRepositoryMock
 import br.com.renannunessil.popmovies.movies.moviedetails.viewmodel.MovieDetailsViewModel
 import br.com.renannunessil.popmovies.movies.movieslist.repository.MoviesListRepositoryImpl
 import br.com.renannunessil.popmovies.movies.movieslist.repository.MoviesListRepositoryMock
@@ -35,12 +36,20 @@ class ViewModelFactory(private val context: Context, private val isMock: Boolean
                 }
             }
             modelClass.isAssignableFrom(MovieDetailsViewModel::class.java) -> {
-                MovieDetailsViewModel(
-                    MovieDetailsRepositoryImpl.MovieDetailsRepositoryProvider.provideMovieDetailsRepository(
-                        connectionUtil,
-                        context
-                    )
-                ) as T
+                if (!isMock) {
+                    MovieDetailsViewModel(
+                        MovieDetailsRepositoryImpl.MovieDetailsRepositoryProvider.provideMovieDetailsRepository(
+                            connectionUtil,
+                            context
+                        )
+                    ) as T
+                } else {
+                    MovieDetailsViewModel(
+                        MovieDetailsRepositoryMock.MovieDetailsRepositoryProvider.provideMovieDetailsRepository(
+                            context
+                        )
+                    ) as T
+                }
             }
             modelClass.isAssignableFrom(SelectedMovieViewModel::class.java) -> SelectedMovieViewModel(
                 context

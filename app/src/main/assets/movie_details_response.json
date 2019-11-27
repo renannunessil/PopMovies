@@ -1,0 +1,276 @@
+{
+  "id": 475557,
+  "cast": [],
+  "crew": [
+    {
+      "credit_id": "5c6dd8aa0e0a262c99a1aed3",
+      "department": "Writing",
+      "gender": 2,
+      "id": 324,
+      "job": "Writer",
+      "name": "Scott Silver",
+      "profile_path": "/vRblvymfxaMd7Lsqs4ypVAfnJK.jpg"
+    },
+    {
+      "credit_id": "5d783007af432400139695e7",
+      "department": "Production",
+      "gender": 2,
+      "id": 1296,
+      "job": "Executive Producer",
+      "name": "Bruce Berman",
+      "profile_path": "/nXKlbRLV5aKzIW6XViCAiqWbxPk.jpg"
+    },
+    {
+      "credit_id": "5c7275559251415eddb30074",
+      "department": "Art",
+      "gender": 2,
+      "id": 5670,
+      "job": "Production Design",
+      "name": "Mark Friedberg",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c727256c3a3685a4914deaf",
+      "department": "Camera",
+      "gender": 2,
+      "id": 5387,
+      "job": "Director of Photography",
+      "name": "Lawrence Sher",
+      "profile_path": "/hjnMqT5EbDTOvvsXZxiP74qeGbp.jpg"
+    },
+    {
+      "credit_id": "5d7830da39549a0011971dc6",
+      "department": "Crew",
+      "gender": 2,
+      "id": 5387,
+      "job": "Cinematography",
+      "name": "Lawrence Sher",
+      "profile_path": "/hjnMqT5EbDTOvvsXZxiP74qeGbp.jpg"
+    },
+    {
+      "credit_id": "5d783117af43240014969657",
+      "department": "Art",
+      "gender": 1,
+      "id": 5390,
+      "job": "Supervising Art Director",
+      "name": "Laura Ballinger",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d78308c069f0e10d7318e49",
+      "department": "Production",
+      "gender": 2,
+      "id": 10949,
+      "job": "Executive Producer",
+      "name": "Michael E. Uslan",
+      "profile_path": "/lJ8n7Z9JB0XH4dxdgI48HG9jX1o.jpg"
+    },
+    {
+      "credit_id": "5c72736bc3a3685a3e156207",
+      "department": "Production",
+      "gender": 2,
+      "id": 38939,
+      "job": "Executive Producer",
+      "name": "Richard Baratta",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c72748bc3a3685a44156937",
+      "department": "Costume & Make-Up",
+      "gender": 2,
+      "id": 40471,
+      "job": "Costume Design",
+      "name": "Mark Bridges",
+      "profile_path": "/mw2M3u5WtvBcbL3QdudnaWlWjiV.jpg"
+    },
+    {
+      "credit_id": "5c6dd8499251412a7404f29b",
+      "department": "Production",
+      "gender": 1,
+      "id": 45648,
+      "job": "Producer",
+      "name": "Emma Tillinger Koskoff",
+      "profile_path": "/bsKUYo9DyNYj4xB10182k7CZOQD.jpg"
+    },
+    {
+      "credit_id": "5d783050069f0e001132a0af",
+      "department": "Production",
+      "gender": 2,
+      "id": 47365,
+      "job": "Executive Producer",
+      "name": "Walter Hamada",
+      "profile_path": "/k5QwIY7m4SJJceH2GeBgDrR61Vo.jpg"
+    },
+    {
+      "credit_id": "5c6dd82bc3a368745eeea2b9",
+      "department": "Production",
+      "gender": 2,
+      "id": 51329,
+      "job": "Producer",
+      "name": "Bradley Cooper",
+      "profile_path": "/nzvYJQSlKKTLZXg3QYp3MG1TCaF.jpg"
+    },
+    {
+      "credit_id": "5d2ddcd6caab6d31b2988b81",
+      "department": "Directing",
+      "gender": 2,
+      "id": 57130,
+      "job": "Director",
+      "name": "Todd Phillips",
+      "profile_path": "/qIoZhWDXSnMXvfuqwKZE8KAYOXu.jpg"
+    },
+    {
+      "credit_id": "5c6dd8139251412fc4111d8f",
+      "department": "Production",
+      "gender": 2,
+      "id": 57130,
+      "job": "Producer",
+      "name": "Todd Phillips",
+      "profile_path": "/qIoZhWDXSnMXvfuqwKZE8KAYOXu.jpg"
+    },
+    {
+      "credit_id": "5c6dd87a0e0a267f9d9aa6d3",
+      "department": "Writing",
+      "gender": 2,
+      "id": 57130,
+      "job": "Writer",
+      "name": "Todd Phillips",
+      "profile_path": "/qIoZhWDXSnMXvfuqwKZE8KAYOXu.jpg"
+    },
+    {
+      "credit_id": "5d7830a963d7130013fdf92b",
+      "department": "Production",
+      "gender": 2,
+      "id": 82133,
+      "job": "Co-Producer",
+      "name": "David Webb",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d9c73a06d675a4aa8f270e4",
+      "department": "Costume & Make-Up",
+      "gender": 0,
+      "id": 117206,
+      "job": "Hair Department Head",
+      "name": "Kay Georgiou",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c6dd9b39251417df40dd456",
+      "department": "Editing",
+      "gender": 2,
+      "id": 961610,
+      "job": "Editor",
+      "name": "Jeff Groth",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d9d13edf96a390040f6b16a",
+      "department": "Art",
+      "gender": 0,
+      "id": 1023712,
+      "job": "Set Decoration",
+      "name": "Kris Moran",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c72739d9251415ef5b2b520",
+      "department": "Production",
+      "gender": 0,
+      "id": 1065353,
+      "job": "Executive Producer",
+      "name": "Joseph Garner",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d8e12c18289a00021cbcecd",
+      "department": "Costume & Make-Up",
+      "gender": 1,
+      "id": 1070138,
+      "job": "Makeup Department Head",
+      "name": "Nicki Ledermann",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d9d147da5046e004382d1c8",
+      "department": "Crew",
+      "gender": 2,
+      "id": 1074163,
+      "job": "Stunt Coordinator",
+      "name": "G.A. Aguilar",
+      "profile_path": "/qhnZkskvONZXKmijtOzTG0uP5kS.jpg"
+    },
+    {
+      "credit_id": "5d783039af4324001396962f",
+      "department": "Production",
+      "gender": 2,
+      "id": 1116278,
+      "job": "Executive Producer",
+      "name": "Aaron L. Gilbert",
+      "profile_path": "/fVjWdbyum3i85gqpxp8T7kJxIiV.jpg"
+    },
+    {
+      "credit_id": "5d9d14b64772150041029bc6",
+      "department": "Crew",
+      "gender": 0,
+      "id": 1142261,
+      "job": "Stunt Double",
+      "name": "Airon Armstrong",
+      "profile_path": "/cr6ErIjuFQjKvENfv3q8a1DVmpI.jpg"
+    },
+    {
+      "credit_id": "5c727261c3a3685a35155f07",
+      "department": "Sound",
+      "gender": 1,
+      "id": 1178828,
+      "job": "Original Music Composer",
+      "name": "Hildur Guðnadóttir",
+      "profile_path": "/xkJTSLeYZkOqouzflrUNgLSC1lL.jpg"
+    },
+    {
+      "credit_id": "5d9d151ff96a390027f6bbc8",
+      "department": "Visual Effects",
+      "gender": 2,
+      "id": 1338585,
+      "job": "Visual Effects",
+      "name": "Brian Adler",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d783023af43240013969610",
+      "department": "Production",
+      "gender": 0,
+      "id": 1388469,
+      "job": "Executive Producer",
+      "name": "Jason Cloth",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5d9d14c94772150029028f97",
+      "department": "Crew",
+      "gender": 0,
+      "id": 1459769,
+      "job": "Stunts",
+      "name": "Frank Alfano",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c7273c4c3a3685a3e1562f9",
+      "department": "Production",
+      "gender": 0,
+      "id": 1594606,
+      "job": "Casting",
+      "name": "Shayna Markowitz",
+      "profile_path": null
+    },
+    {
+      "credit_id": "5c7275730e0a262c097d6d10",
+      "department": "Art",
+      "gender": 0,
+      "id": 1717515,
+      "job": "Leadman",
+      "name": "Timothy Metzger",
+      "profile_path": null
+    }
+  ]
+}
